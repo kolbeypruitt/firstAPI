@@ -1,16 +1,16 @@
 extends ../layout
 
 block content
-  h1= title
-  tbody
-    for books in data
-      .div
-        ul
-          li Title: #{books.title}
+  .container
+    h1= title
+    tbody
+      for books in data
+        .notification-box
           ul
-            li Author: #{books.author}
-          ul
-            li Description: #{books.description}
-          ul
-            li Rank: #{books.rank}
-
+            li Title: #{books.title}
+            ul
+              li Author: #{books.author}
+            ul
+              li Description: #{books.description}
+            ul
+              li Rank: #{books.rank}
