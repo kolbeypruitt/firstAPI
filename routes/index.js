@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/APIdata', function(req, res, next) {
-  res.render('APIdata/index', { title: 'The APIdata will display here.' });
+  res.render('index', { title: 'The APIdata will display here.' });
 });
 module.exports = router;
 
